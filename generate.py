@@ -1,15 +1,8 @@
-# Alex Achramowicz
-# 01/29/21
-# Description: Provided a list of latin words and spells, generate a new spell and definition
-# Credit to https://www.pojo.com/harry-potter-spell-list/ for data
-# Credit to https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset?select=Spells.csv for data
-# Credit to https://petscan.wmflabs.org/?language=la&project=wiktionary&categories=Lingua%20Latina&ns%5B0%5D=1&sortby=title&interface_language=en&active_tab=tab_output&&doit= for Latin dictionary
-
 from time import sleep
 from credentials import *
 import markovify, random, sys, tweepy
 
-SLEEP_TIME = 300
+SLEEP_TIME = 1800 # 30 min
 
 
 # Twitter authentication
