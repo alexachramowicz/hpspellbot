@@ -1,11 +1,16 @@
 # hpspellbot
-Twitterbot that generates text to be used as spells in the Harry Potter realm.
-Provided a list of latin words and spells, generate a new spell and definition.
+[python 3.8.5](https://www.python.org/downloads/release/python-385/)
 
+**hpspellbot** is a Twitterbot that generate new Harry Potter spells!
 
-## Credit
-https://www.pojo.com/harry-potter-spell-list/ for spell data
+It generates the spell names by randomizing latin words into singles or doubles. It generates the spell effect using [markovify](https://github.com/jsvine/markovify) to build a chain on existing Harry Potter spell effects. The resulting effects should be unique.
 
-https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset?select=Spells.csv for spell data
+Uses [Tweepy](https://www.tweepy.org/) to access the Twitter API.
 
-https://petscan.wmflabs.org/?language=la&project=wiktionary&categories=Lingua%20Latina&ns%5B0%5D=1&sortby=title&interface_language=en&active_tab=tab_output&&doit= for Latin dictionary
+### Data Credit
+
+https://www.pojo.com/harry-potter-spell-list/
+
+https://www.kaggle.com/gulsahdemiryurek/harry-potter-dataset?select=Spells.csv
+
+https://petscan.wmflabs.org/?language=la&project=wiktionary&categories=Lingua%20Latina&ns%5B0%5D=1&sortby=title&interface_language=en&active_tab=tab_output&&doit=
